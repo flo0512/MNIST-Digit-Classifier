@@ -30,5 +30,5 @@ I followed the tutorial to understand the core concepts and wrote the code in Ju
 
 ## Next Steps
 
-improving my knowledge
-building the project as a Convolutional Neural Network (CNN)
+- improving my knowledge
+- building the project as a Convolutional Neural Network (CNN)
