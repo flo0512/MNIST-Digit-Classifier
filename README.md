@@ -5,11 +5,12 @@ The model learns to recognize handwritten digits from the MNIST dataset.
 
 ## What I Learned
 
-- Basics of neural networks (layers, neurons, activation functions)
+- Basics of neural networks (layers, neurons, activation functions, optimizers)
 - How to train and evaluate a model with Keras
 - Data normalization and model accuracy evaluation
 - Overfitting and generalization
 - Dropout regularization and its effect on model performance
+- Comparison of optimizers (SGD vs. Adam) and their impact on learning behavior
 
 ## Model Architecture
 
