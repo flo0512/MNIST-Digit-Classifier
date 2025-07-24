@@ -29,19 +29,26 @@ The model learns to recognize handwritten digits from the MNIST dataset.
 - Dropout layer (rate: 0.3)
 - Output layer with 10 neurons and softmax activation
 
-## Results
+### Optimizer Comparison:
+
+- Same architecture, trained with 30 epochs
+- Compared performance using SGD and Adam optimizers
 
 | Model           | Train Accuracy | Test Accuracy |
 | --------------- | -------------- | ------------- |
 | Base (5 epochs) | ~98%           | ~98%          |
 | Overfit (100e)  | ~100%          | ~97.5–98.1%   |
 | With Dropout    | ~99.2%         | ~98% ± 0.05   |
+| SGD (30e)       | Lower          | Lower         |
+| Adam (30e)      | Higher         | Higher        |
 
 - Dropout stabilizes the performance and adds robustness
+- Adam converges faster and achieves higher accuracy than SGD, but shows minor fluctuations in the learning curve
 
 ## Visualizations
 
-Plots of train/test accuracy over 100 epochs are included in the notebook.
+Plots of train/test accuracy and loss over 100 or 30 epochs are included in the notebook(s).  
+Comparison between optimizers and dropout impact is visualized for better insight.
 
 ## Dataset
 
