@@ -24,6 +24,11 @@ The model learns to recognize handwritten digits from the MNIST dataset.
 
 - Same as base, trained with 100 epochs to observe overfitting behavior
 
+### Underfit Model:
+
+- Flatten layer (input shape: 28x28)
+- Output layer with 10 neurons and softmax activation
+
 ### Dropout Model:
 
 - Dense layer with 128 neurons and ReLU activation
@@ -35,20 +40,21 @@ The model learns to recognize handwritten digits from the MNIST dataset.
 - Same architecture, trained with 30 epochs
 - Compared performance using SGD and Adam optimizers
 
-| Model           | Train Accuracy | Test Accuracy |
-| --------------- | -------------- | ------------- |
-| Base (5 epochs) | ~98%           | ~98%          |
-| Overfit (100e)  | ~100%          | ~97.5–98.1%   |
-| With Dropout    | ~99.2%         | ~98% ± 0.05   |
-| SGD (30e)       | Lower          | Lower         |
-| Adam (30e)      | Higher         | Higher        |
+| Model          | Train Accuracy | Test Accuracy |
+| -------------- | -------------- | ------------- |
+| Base (5 e)     | ~98%           | ~98%          |
+| Overfit (100e) | ~100%          | ~97.5–98.1%   |
+| Underfit (5e)  | ~92.5%         | ~92.5%        |
+| With Dropout   | ~99.2%         | ~98% ± 0.05   |
+| SGD (30e)      | Lower          | Lower         |
+| Adam (30e)     | Higher         | Higher        |
 
 - Dropout stabilizes the performance and adds robustness
 - Adam converges faster and achieves higher accuracy than SGD, but shows minor fluctuations in the learning curve
 
 ## Visualizations
 
-Plots of train/test accuracy and loss over 100 or 30 epochs are included in the notebook(s).  
+Plots of train/test accuracy and loss are included in the notebook(s).  
 Comparison between optimizers and dropout impact is visualized for better insight.
 
 ## Dataset
