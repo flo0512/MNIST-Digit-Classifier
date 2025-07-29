@@ -11,6 +11,7 @@ The model learns to recognize handwritten digits from the MNIST dataset.
 - Overfitting, underfitting and generalization
 - Dropout regularization and its effect on model performance
 - Comparison of optimizers (SGD vs. Adam) and their impact on learning behavior
+- Basics of Tensorboard
 
 ## Model Architecture
 
@@ -56,6 +57,7 @@ The model learns to recognize handwritten digits from the MNIST dataset.
 
 Plots of train/test accuracy and loss are included in the notebook(s).  
 Comparison between optimizers and dropout impact is visualized for better insight.
+I used a Tensorboard locally.
 
 ## Dataset
 
@@ -70,3 +72,4 @@ Based on a tutorial from YouTube (Codebasics), expanded by own experiments.
 - Learn about other regularization methods (e.g. L2)
 - Build a CNN for improved performance
 - Begin handwritten character recognition on custom images
+- understanding Tensorboard better
