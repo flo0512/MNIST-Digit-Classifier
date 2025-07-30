@@ -12,6 +12,7 @@ The model learns to recognize handwritten digits from the MNIST dataset.
 - Dropout regularization and its effect on model performance
 - Comparison of optimizers (SGD vs. Adam) and their impact on learning behavior
 - Basics of Tensorboard
+- Basics of Convolutional Neural Networks (CNNs)
 
 ## Model Architecture
 
@@ -36,6 +37,15 @@ The model learns to recognize handwritten digits from the MNIST dataset.
 - Dropout layer (rate: 0.3)
 - Output layer with 10 neurons and softmax activation
 
+### CNN Model:
+
+- Convolutional Layer(input shape: 28x28) x3
+- Pooling Layer x3
+- Flatten layer (input shape: 28x28)
+- Dense layer with 128 neurons and ReLU activation
+- Dropout layer (rate: 0.5)
+- Output layer with 10 neurons and softmax activation
+
 ### Optimizer Comparison:
 
 - Same architecture, trained with 30 epochs
@@ -49,6 +59,7 @@ The model learns to recognize handwritten digits from the MNIST dataset.
 | With Dropout   | ~99.2%         | ~98% ± 0.05   |
 | SGD (30e)      | Lower          | Lower         |
 | Adam (30e)     | Higher         | Higher        |
+| CNN (20e)      | ~99.5%         | ~98.5%        |
 
 - Dropout stabilizes the performance and adds robustness
 - Adam converges faster and achieves higher accuracy than SGD, but shows minor fluctuations in the learning curve
@@ -70,6 +81,5 @@ Based on a tutorial from YouTube (Codebasics), expanded by own experiments.
 ## Next Steps
 
 - Learn about other regularization methods (e.g. L2)
-- Build a CNN for improved performance
 - Begin handwritten character recognition on custom images
 - understanding Tensorboard better
