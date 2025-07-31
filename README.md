@@ -12,6 +12,7 @@ The model learns to recognize handwritten digits from the MNIST dataset.
 - Dropout regularization and its effect on model performance
 - Comparison of optimizers (SGD vs. Adam) and their impact on learning behavior
 - Basics of Tensorboard
+- Confusion_matrix & classification metrics
 - Basics of Convolutional Neural Networks (CNNs)
 
 ## Model Architecture
